@@ -1,0 +1,69 @@
+﻿@model IEnumerable<BTL_QLNS3.Models.NHANVIEN>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.id_Nv)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.name_Nv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ngaysinh_Nv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diachi_Nv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.luong_Nv)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Pb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.id_Da)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        @*<th>
+            @Html.DisplayNameFor(model => model.id_Nv)
+        </th>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.name_Nv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ngaysinh_Nv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diachi_Nv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.luong_Nv)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Pb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_Da)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "NhanVien", new { id = item.id_Nv }) |
+            @Html.ActionLink("Details", "Details", new { id = item.id_Nv }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.id_Nv })
+        </td>
+    </tr>
+}
+
+</table>

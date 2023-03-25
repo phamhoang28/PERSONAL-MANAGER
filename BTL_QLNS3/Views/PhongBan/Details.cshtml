@@ -1,0 +1,42 @@
+﻿@model BTL_QLNS3.Models.PHONGBAN
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PHONGBAN</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name_Pb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name_Pb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.sonv_Pb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sonv_Pb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.mota_Pb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.mota_Pb)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_Pb }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

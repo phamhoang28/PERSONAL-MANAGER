@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="DangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ManHinhChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Quanlyduan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Quanlynhanvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Quanlyphongban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Quanlynhasu_3FDataSet.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Quanlynhasu_3FDataSet1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>
